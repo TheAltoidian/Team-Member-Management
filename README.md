@@ -34,7 +34,7 @@ Team Member Manager lets the user enter a series of team members and their detai
 
 ## Usage
 *Provide examples of the application being used. Include screenshots as needed.*
-![demo image](local link to image)
+![draft image](/scratchDraftImage.png)
 
 ## Credits
 @TheAltoidian

@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create our Input model
-class NewMember extends Model { }
+class TeamMember extends Model { }
 
-NewMember.init(
+TeamMember.init(
     {
         inputID: {
             type: DataTypes.INTEGER,
@@ -16,7 +16,7 @@ NewMember.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        id: {
+        employeeID: {
             type: DataTypes.STRING,
             allowNull: false,  
         },
@@ -43,8 +43,8 @@ NewMember.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'newMember'
+        modelName: 'teamMember'
     }
 );
 
-module.exports = NewMember;
+module.exports = TeamMember;

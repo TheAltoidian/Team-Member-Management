@@ -1,4 +1,13 @@
 const User = require('./User');
-const NewMember = require('./NewMember');
+const TeamMember = require('./TeamMember');
 
-module.exports = { User, NewMember };
+// create associations
+User.hasMany(TeamMember, {
+    foreignKey: 'user_id'
+});
+
+TeamMember.belongsTo(User, {
+    foreignKey: 'user_id',
+});
+
+module.exports = { User, TeamMember };

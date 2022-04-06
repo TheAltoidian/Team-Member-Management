@@ -1,0 +1,16 @@
+<ol class="team-member-list">
+    {{#each teamMembers as |teamMember|}}
+    <li>
+        <article class="post">
+            <div class="title">
+                <span>({{teamMember.name}})</span>
+            </div>
+            <div class="meta">
+                {{teamMember.email}} on {{teamMember.created_at}}
+                |
+                <a href="/teamMember/{{teamMember.name}}">text</a>
+            </div>
+        </article>
+    </li>
+    {{/each}}
+</ol>

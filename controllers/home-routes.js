@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { TeamMember, User} = require('../models');
+const { TeamMember, User } = require('../models');
 
 router.get('/', (req, res) => {
+    console.log(req.session);
     TeamMember.findAll({
         attributes: [
             'inputID',
@@ -29,6 +30,15 @@ router.get('/', (req, res) => {
     //         username: 'test_user'
     //     }
     // });
+});
+
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('login');
 });
 
 module.exports = router;

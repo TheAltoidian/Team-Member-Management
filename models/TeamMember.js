@@ -6,7 +6,7 @@ class TeamMember extends Model { }
 
 TeamMember.init(
     {
-        inputID: {
+        id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,

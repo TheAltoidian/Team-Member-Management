@@ -1,0 +1,14 @@
+{{#if loggedIn}}
+<article class="team-member-profile">
+   <div class="team-member-name">
+      Team member name: {{teamMember.name}}
+   </div>
+   <div class="team-member-info">
+      Employee ID: {{teamMember.employeeID}} <br>
+      Email: {{teamMember.email}} <br>
+      Role: {{teamMember.role}} <br>
+      Added by: {{teamMember.user_id}} <br>
+      {{teamMember.created_at}}
+   </div>
+</article>
+{{/if}}

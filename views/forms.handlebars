@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{!-- <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <link rel="stylesheet" href="./testCSS.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -14,18 +15,8 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="parsley.js"></script>
- --}}
+
 <body>
-    <div class="bs-callout bs-callout-warning hidden">
-        <h4>Oh snap!</h4>
-        <p>This form seems to be invalid :(</p>
-    </div>
-
-    <div class="bs-callout bs-callout-info hidden">
-        <h4>Yay!</h4>
-        <p>Everything seems to be ok :)</p>
-    </div>
-
     <form id="demo-form" class="" data-parsley-validate="">
         <label for="fullname">Full Name * :</label>
         <input type="text" class="form-control" name="fullname" required="">
@@ -69,6 +60,7 @@
     <script>
         $('#form').parsley();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 
 
 </body>

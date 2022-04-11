@@ -5,6 +5,11 @@ const { TeamMember, User } = require('../models');
 router.get('/', (req, res) => {
     console.log(req.session);
 
+    if (!req.session.loggedIn) {
+        res.redirect("/login");
+        return;
+    }
+
     TeamMember.findAll({
         attributes: [
             'id',
@@ -27,13 +32,10 @@ router.get('/', (req, res) => {
             console.log(err);
             res.status(500).json(err);
         });
-    // res.render('homepage', {
-    //     id: 1,
-    //     created_at: new Date(),
-    //     user: {
-    //         username: 'test_user'
-    //     }
-    // });
+});
+
+router.get('/forms', (req, res) => {
+    res.render('forms');
 });
 
 router.get('/login', (req, res) => {

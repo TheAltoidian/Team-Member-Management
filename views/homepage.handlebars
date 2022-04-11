@@ -2,13 +2,12 @@
     {{#each teamMembers as |teamMember|}}
     <li>
         <article class="post">
-            <div class="title">
-                <span>({{teamMember.name}})</span>
+            <div>
+                <span>{{teamMember.name}}</span>
             </div>
             <div class="meta">
-                {{teamMember.email}} on {{teamMember.created_at}}
-                |
-                <a href="/teamMember/{{teamMember.id}}">text</a>
+                {{teamMember.email}} <br/>
+                {{teamMember.role}}
             </div>
         </article>
     </li>

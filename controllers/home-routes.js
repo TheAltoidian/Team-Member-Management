@@ -38,7 +38,7 @@ router.get('/addteammember', (req, res) => {
     res.render('add-teamMember');
 });
 
-router.get('/searchteammember', (req, res) => {
+router.get('/search', (req, res) => {
     res.render('search-teamMember');
 });
 

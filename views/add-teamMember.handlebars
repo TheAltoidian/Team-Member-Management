@@ -12,29 +12,17 @@
 
 <body>
 
-    <button id="btn">hi</button>
-
-    <div class="bs-callout bs-callout-warning hidden">
-        <h4>Oh snap!</h4>
-        <p>This form seems to be invalid :(</p>
-    </div>
-    
-    <div class="bs-callout bs-callout-info hidden">
-        <h4>Yay!</h4>
-        <p>Everything seems to be ok :)</p>
-    </div>
-
     <div>
-        <p>Create a team member</p>
+        <p>Add a team member</p>
         <form id="add-team-member" class="" data-parsley-validate="">
             <label for="fullname">Full Name * :</label>
             <input type="text" id= 'add-name' class="form-control" name="fullname" required="">
 
-            {{!-- <label for="email">Email * :</label>
+            <label for="email">Email * :</label>
             <input type="email" id = 'add-email' class="form-control" name="email" data-parsley-trigger="change" required="">
         
             <label for="role">Role * :</label>
-            <input type="text"  id = 'add-role' class="form-control" name="role" data-parsley-trigger="change" required=""> --}}
+            <input type="text"  id = 'add-role' class="form-control" name="role" data-parsley-trigger="change" required="">
 
             <br>
             <input type="submit" id= 'add-btn' class="btn btn-default" value="Add">

@@ -34,8 +34,12 @@ router.get('/', (req, res) => {
         });
 });
 
-router.get('/forms', (req, res) => {
-    res.render('forms');
+router.get('/addteammember', (req, res) => {
+    res.render('add-teamMember');
+});
+
+router.get('/searchteammember', (req, res) => {
+    res.render('search-teamMember');
 });
 
 router.get('/login', (req, res) => {

@@ -17,30 +17,15 @@
 <script src="parsley.js"></script>
 
 <body>
-    <form id="demo-form" class="" data-parsley-validate="">
-        <label for="fullname">Full Name * :</label>
-        <input type="text" class="form-control" name="fullname" required="">
+    <div>
+        <p>Search for a team member</p>
+        <form id="search-team-member" class="" data-parsley-validate="">
+            <label for="fullname">Full Name * :</label>
+            <input type="text" id='search-name' class="form-control" name="fullname" required="">
 
-        <label for="email">Email * :</label>
-        <input type="email" class="form-control" name="email" data-parsley-trigger="change" required="">
-
-        <br>
-        <input type="submit" class="btn btn-default" value="validate">
-    </form>
-
-    <form id="demo-form" data-parsley-validate="">
-        <label for="fullname">Full Name * :</label>
-        <input type="text" class="form-control" name="fullname" required="">
-
-        <label for="email">Email * :</label>
-        <input type="email" class="form-control" name="email" data-parsley-trigger="change" required="">
-
-        <br>
-        <input type="submit" class="btn btn-default" value="validate">
-    </form>
-
-    <div class="team-info">
-        <h1>team member info can go here?</h1>
+            <br>
+            <input type="submit" id='search-btn' class="btn btn-default" value="Search">
+        </form>
     </div>
 
 
@@ -61,6 +46,7 @@
         $('#form').parsley();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+    <script src="../public/javascript/search-teamMember.js"></script>
 
 
 </body>

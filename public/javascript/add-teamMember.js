@@ -56,4 +56,4 @@ async function newFormHandler(event) {
 
 document.getElementById('add-btn').addEventListener('click', newFormHandler);
 
-<script src="/javascript/add-team-member.js"></script>
+<script src="/javascript/add-teamMember.js"></script>

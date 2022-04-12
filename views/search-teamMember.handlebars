@@ -30,16 +30,7 @@
 
 
     <script type="text/javascript">
-        $(function () {
-            $('#demo-form').parsley().on('field:validated', function () {
-                var ok = $('.parsley-error').length === 0;
-                $('.bs-callout-info').toggleClass('hidden', !ok);
-                $('.bs-callout-warning').toggleClass('hidden', ok);
-            })
-                .on('form:submit', function () {
-                    return false; // Don't submit form for this demo
-                });
-        });
+
     </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

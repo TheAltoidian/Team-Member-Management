@@ -26,7 +26,7 @@ $(function () {
 });
 
 
-const btn = document.getElementById('btn');
+const btn = document.getElementById('add-btn');
 btn.addEventListener('click',clickHandler);
 
 function clickHandler(event) {

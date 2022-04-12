@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     console.log('==============');
     TeamMember.findAll({
         // Query configuration
-        attributes: ['inputID', 'name', 'employeeID', 'email', 'role', 'user_id', 'created_at'],
+        attributes: ['id', 'name', 'employeeID', 'email', 'role', 'user_id', 'created_at'],
         include: [
             {
                 model: User,
@@ -25,9 +25,9 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     TeamMember.findOne({
         where: {
-            inputID: req.params.id
+            id: req.params.id
         },
-        attributes: ['inputID', 'name', 'employeeID', 'email', 'role', 'user_id', 'created_at'],
+        attributes: ['id', 'name', 'employeeID', 'email', 'role', 'user_id', 'created_at'],
         include: [
             {
                 model: User,

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,23 @@
     <title>Team Members</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header>
             <h1>
                 <a href="/">Team Members</a>
             </h1>
+            <nav>
+                {{#if loggedIn}}
+                <a href="../searchteammember" class="btn-no-style">Team Member Search</a>
+                {{/if}}
+            </nav>
+            <nav>
+                {{#if loggedIn}}
+                <a href="../addteammember" class="btn-no-style">Add Team Member</a>
+                {{/if}}
+            </nav>
             <nav>
                 {{#if loggedIn}}
                 <button id="logout" class="btn-no-style">logout</button>
@@ -26,10 +38,11 @@
             Thanks for using our app!
         </footer>
     </div>
-    
+
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
-</body>
-</html>
 
+</body>
+
+</html>

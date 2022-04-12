@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // form.addEventListener('submit',function()) {
 //     const name  = document.getElementById('add-name').value
 //     const email = document.getElementById('add-email').value
@@ -57,3 +58,33 @@ async function newFormHandler(event) {
 document.getElementById('add-btn').addEventListener('click', newFormHandler);
 
 <script src="/javascript/add-teamMember.js"></script>
+=======
+const newFormHandler = function() {
+    const addName = document.getElementById("add-name").value;
+    const addEmail = document.getElementById("add-email").value;
+    const addRole = document.getElementById("add-role").value;
+    console.log("test");
+    console.log(addName + addEmail + addRole);
+
+    // return member = {
+    //     name: addName,
+    //     email: addEmail,
+    //     role: addRole
+    // };
+
+    await fetch(`/api/teamMembers`, {
+        method: 'POST',
+        body: JSON.stringify({
+            addName,
+            addEmail,
+            addRole
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+};
+
+
+document.querySelector('#add-btn').addEventListener('submit', newFormHandler);
+>>>>>>> bf3153d633a5df61bf16cbe67ec8a442d2d41325

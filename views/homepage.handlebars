@@ -1,0 +1,15 @@
+<ol class="team-member-list">
+    {{#each teamMembers as |teamMember|}}
+    <li>
+        <article class="post">
+            <div>
+                <span>{{teamMember.name}}</span>
+            </div>
+            <div class="meta">
+                {{teamMember.email}} <br/>
+                {{teamMember.role}}
+            </div>
+        </article>
+    </li>
+    {{/each}}
+</ol>
